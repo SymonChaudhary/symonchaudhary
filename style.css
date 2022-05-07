@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+.{
+    scroll-behavior: smooth;
+
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*nav styling*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600px;
+    
+   
+}
+
+.navbar .logo a span {
+    color:crimson;
+    transition:all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #111;
+}
+.navbar.sticky .logo a span1{
+    color: #111;
+}
+
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+   
+}
+
+.navbar .menu li a {
+    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500; 
+    margin-left: 24px;
+    
+
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color:#111;
+}
+
+/* home section styling */
+.home {
+    display: flex;
+    background: url("banner.jpg") no-repeat center;
+    height: 100vh;
+    color:#fff;
+    min-height: 500px;
+    font-family: 'ubuntu',sans-serif;
+
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .txt-1 {
+    font-size: 27px;
+}
+
+.home .home-content .txt-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-right: -3px;
+}
+
+.home .home-content .txt-3 {
+    font-size: 40px;
+    margin: 5px 0;
+
+}
+
+.home .home-content .txt-3 span {
+    color: crimson;
+    font-weight: 500;
+
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 20px;
+    margin-top: 18px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+.home .home-content a:hover{
+    color:crimson;
+    background: none;
+}
+
+/* about section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'poppins', sans-serif;
+    background: url("11110.jpeg") no-repeat center;
+
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'poppins', sans-serif;
+}
+.about .title::before{
+    content "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content"Who I am";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform:rotateX(-50%)
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left {
+    width: 45%;
+    justify-content: space-around;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: #96b0b4;
+}
+
+.about .about-content .left img{
+    height: auto;
+    width: 400px;
+    object-fit:cover;
+    
+}
+.about .about-content .right{
+    width: 50%;
+}
+.about .about-content .right{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right span{
+    color: crimson;
+
+}
+.about .about-content .right p{
+    text-align: justify;
+
+}
+.about .about-content .right a{
+
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 6px 30px;
+    margin-top: 18px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+/* contact section styling */
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(d.png);
+    background-size: cover;
+}
+.contact .content{
+    max-width:800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: crimson;
+}
+.contact .content p{
+
+    font-weight: 300;
+    color:#fff;
+    font-size: 18px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+ .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size:16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: crimson;
+
+}
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translatey(-20px);
+
+}
+.contactform .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: crimson;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+/* footer section */
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+.navbar .right li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .right li a {
+    color: #fff;
+    font-weight: 500; 
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .right li a:hover {
+    color: crimson;
+}
+.navbar.sticky .right li a:hover{
+    color:#111;
+}
+
